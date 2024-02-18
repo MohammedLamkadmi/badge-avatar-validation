@@ -4,14 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test badge</title>
-    
-    <!-- Correct the script file name to "scrypt.js" -->
-    <script src="https://cdn.jsdelivr.net/npm/jimp/browser/lib/jimp.js"></script>
-    <script src="scrypt.js"></script>
-    
-    <input type="file" id="imageInput" accept="image/*" onchange="loadImageFromInput(this)">
+    <input type="file" id="imageInput" onchange="loadImageFromInput(this)">
 </head>
 <body>
-    <img id="badgeImage" src="images/20240203_231035_1_.png" alt="Badge Image">
+    <img id="badgeImage" alt="Badge Image">
+    <script src="script.js"></script>
 </body>
 </html>
