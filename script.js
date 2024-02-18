@@ -94,6 +94,22 @@ function loadImageFromInput(input) {
     }
 }
 
+function handleImageConversion(file, imageElement) {
+    if (!isImagePNG(file) && confirm("Do you want to convert the image to PNG?")) {
+        showMessage("Converting the image to PNG...", true);
+
+        convertImageToPNG(imageElement)
+            .then((convertedPath) => {
+                showMessage("Image successfully converted to PNG", true);
+                imageElement.src = convertedPath;
+            })
+            .catch((error) => {
+                console.error("Error converting the image to PNG:", error);
+                showMessage("Error converting the image to PNG", false);
+            });
+    }
+}
+
 // Function to convert the image to PNG using html2canvas
 function convertImageToPNG(imageElement) {
     return new Promise((resolve, reject) => {

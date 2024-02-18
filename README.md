@@ -25,12 +25,3 @@ This web application validates and displays badge avatars, ensuring they meet sp
 
 - [html2canvas](https://html2canvas.hertzen.com/): Library for image to PNG conversion.
 
-## How to Contribute
-
-If you would like to contribute to the development of this project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make changes and commit them.
-4. Push the changes to your fork.
-5. Submit a pull request.
